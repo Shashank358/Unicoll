@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in_up_navigation"
+    app:startDestination="@id/mainAuthFrag">
+
+    <fragment
+        android:id="@+id/signInFrag"
+        android:name="com.AGDevelopment.uni.SignInFrag"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFrag_to_signUpFrag"
+            app:destination="@id/signUpFrag"
+            app:enterAnim="@anim/slide_right"
+            app:exitAnim="@anim/slide_left"
+            app:popUpTo="@+id/sign_in_up_navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFrag"
+        android:name="com.AGDevelopment.uni.SignUpFrag"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFrag_to_signInFrag"
+            app:destination="@id/signInFrag"
+            app:enterAnim="@anim/slide_right"
+            app:exitAnim="@anim/slide_left"
+            app:popUpTo="@+id/sign_in_up_navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainAuthFrag"
+        android:name="com.AGDevelopment.uni.MainAuthFrag"
+        android:label="fragment_main_auth"
+        tools:layout="@layout/fragment_main_auth" >
+        <action
+            android:id="@+id/action_mainAuthFrag_to_signInFrag"
+            app:destination="@id/signInFrag"
+            app:enterAnim="@anim/zoom_enter"
+            app:exitAnim="@anim/zoom_exit" />
+        <action
+            android:id="@+id/action_mainAuthFrag_to_signUpFrag"
+            app:destination="@id/signUpFrag"
+            app:enterAnim="@anim/zoom_enter"
+            app:exitAnim="@anim/zoom_exit" />
+    </fragment>
+</navigation>

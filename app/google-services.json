@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "953777742648",
+    "firebase_url": "https://unicoll-dae48.firebaseio.com",
+    "project_id": "unicoll-dae48",
+    "storage_bucket": "unicoll-dae48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953777742648:android:9587af2b160aadfb",
+        "android_client_info": {
+          "package_name": "com.AGDevelopment.uni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953777742648-bdm9t9qg10el327f0feaneamveamrgml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.AGDevelopment.uni",
+            "certificate_hash": "d50fdd6b57982c7bd7504ebeea69a1aef1877f54"
+          }
+        },
+        {
+          "client_id": "953777742648-cujmhi1bu653q1o1cihgblfptsp7ja7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXDnKvZWlcA-_hC45P3q4o6w8W5H51vdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953777742648-cujmhi1bu653q1o1cihgblfptsp7ja7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
